@@ -1,0 +1,15 @@
+{
+  "name": "dbl-project-template",
+  "version": "1.0.0",
+  "description": "Here is your project's description",
+  "scripts": {},
+  "author": "author name",
+  "license": "ISC",
+  "dependencies": {
+    "react": "~15.0.1",
+    "react-dom": "~15.0.1",
+    "react-redux": "~4.4.5",
+    "redux": "~3.5.0",
+    "@ali/dblx": "^0.0.12"
+  }
+}
