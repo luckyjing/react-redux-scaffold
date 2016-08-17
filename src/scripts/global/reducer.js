@@ -1,5 +1,7 @@
 import * as ACTION from './action';
 import * as TYPE from './constant';
+import {namespace} from './services'
+namespace('global', TYPE);
 const initState = {
   _system_menu: []
 };

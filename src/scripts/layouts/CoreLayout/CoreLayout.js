@@ -1,6 +1,6 @@
 import React from 'react'
 import './CoreLayout.less'
-import '../../styles/core.less'
+import '../../../css/index.less'
 import * as actions from '../../global/action'
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'

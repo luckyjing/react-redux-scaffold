@@ -1,9 +1,13 @@
 import * as TYPE from './constant';
-export function demo() {
-  return {
+import {namespace} from '../../../global/services'
+namespace('<%= pascalEntityName %>', TYPE);
+export function demo(msg) {
+  var value = {
     type: TYPE.DEMO,
-    data:""
-  }
+    data: msg
+  };
+  console.log(value);
+  return value;
 }
 export const asyncDemo = () => {
   return (dispatch, getState) => {

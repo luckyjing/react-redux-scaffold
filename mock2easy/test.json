@@ -1,0 +1,29 @@
+{
+     "interfaceType": "GET",
+     "requiredParameters": [],
+     "responseParameters": [
+          {
+               "id": "01",
+               "kind": "string",
+               "name": "code",
+               "rule": "200",
+               "array": [],
+               "nameVerify": "name_1471432914000",
+               "ruleVerify": "rule_1471432914000"
+          },
+          {
+               "id": "02",
+               "kind": "string",
+               "name": "msg",
+               "rule": "接受成功",
+               "array": [],
+               "nameVerify": "name_1471432932000",
+               "ruleVerify": "rule_1471432932000"
+          }
+     ],
+     "reqError": [],
+     "docError": [],
+     "interfaceUrl": "/test.json",
+     "interfaceName": "/test.json",
+     "lazyLoad": "no"
+}

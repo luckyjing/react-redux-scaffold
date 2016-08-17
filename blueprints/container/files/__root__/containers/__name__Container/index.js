@@ -7,6 +7,7 @@ export default class <%= pascalEntityName %>Container extends Component {
 
   componentDidMount() {
     const {actions,state} = this.props;
+    actions.demo("Hello,这儿发起了一个actions,你可以直接发起你在redux定义的actions");
   }
 
   render() {

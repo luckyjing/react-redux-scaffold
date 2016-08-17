@@ -1,4 +1,6 @@
 import * as TYPE from './constant';
+import {namespace} from '../../../global/services'
+namespace('<%= pascalEntityName %>', TYPE);
 const initialState = {
 
 };
@@ -6,7 +8,7 @@ const initialState = {
 // Action Handlers
 // 需要编辑
 const ACTION_HANDLERS = {
-  [TYPE.DEMO]: (state, action) => state + action.data
+  [TYPE.DEMO]: (state, action) => state
 };
 
 // Reducer

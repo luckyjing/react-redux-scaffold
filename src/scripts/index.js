@@ -3,8 +3,8 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import {useRouterHistory, browserHistory, hashHistory} from 'react-router'
 import {syncHistoryWithStore} from 'react-router-redux'
-import createStore from '../store/createStore'
-import AppContainer from '../containers/AppContainer'
+import createStore from './store/createStore'
+import AppContainer from './containers/AppContainer'
 
 
 // ========================================================
@@ -25,7 +25,7 @@ const MOUNT_NODE = document.getElementById('root');
 
 let render = () => {
   // 载入路由主文件
-  const routes = require('../routes/index').default(store);
+  const routes = require('./routes/index').default(store);
 
   ReactDOM.render(
     <AppContainer
@@ -56,7 +56,7 @@ if (module.hot) {
   };
 
   // Setup hot module replacement
-  module.hot.accept('../routes/index', () => {
+  module.hot.accept('./routes/index', () => {
     setTimeout(() => {
       ReactDOM.unmountComponentAtNode(MOUNT_NODE);
       render()

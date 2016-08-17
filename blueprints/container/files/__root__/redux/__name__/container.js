@@ -6,7 +6,7 @@ import <%= pascalEntityName %> from '../../containers/<%= pascalEntityName %>Con
 
 // 将actions绑定到props上
 const mapDispatchToProps = (dispatch) => ({
-  action:bindActionCreators(actions,dispatch)
+  actions:bindActionCreators(actions,dispatch)
 });
 
 // 将state绑定到props上
