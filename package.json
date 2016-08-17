@@ -1,15 +1,51 @@
 {
-  "name": "dbl-project-template",
-  "version": "1.0.0",
-  "description": "Here is your project's description",
-  "scripts": {},
-  "author": "author name",
-  "license": "ISC",
+  "name": "react-redux-starter-kit",
+  "version": "3.0.0-alpha.2",
+  "description": "Get started with React, Redux, and React-Router!",
+  "main": "index.js",
+  "engines": {
+    "node": ">=4.2.0",
+    "npm": "^3.0.0"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "lint": "eslint src tests server",
+    "lint:fix": "npm run lint -- --fix",
+    "dev": "def dbl project dev",
+    "test": "better-npm-run test",
+    "test:dev": "npm run test -- --watch",
+    "deploy": "better-npm-run deploy",
+    "deploy:dev": "better-npm-run deploy:dev",
+    "deploy:prod": "better-npm-run deploy:prod",
+    "codecov": "cat coverage/*/lcov.info | codecov"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.alibaba-inc.com/aliyun/abc-starter-kit"
+  },
+  "author": "jingxin.sjx",
+  "license": "MIT",
   "dependencies": {
-    "react": "~15.0.1",
-    "react-dom": "~15.0.1",
-    "react-redux": "~4.4.5",
-    "redux": "~3.5.0",
-    "@ali/dblx": "^0.0.12"
+    "@ali/dblx": "0.0.29",
+    "babel-polyfill": "^6.9.0",
+    "extract-text-webpack-plugin": "^1.0.0",
+    "file-loader": "^0.9.0",
+    "fs-extra": "^0.30.0",
+    "history": "^2.0.0",
+    "html-webpack-plugin": "^2.7.1",
+    "imports-loader": "^0.6.5",
+    "json-loader": "^0.5.4",
+    "normalize.css": "^4.1.1",
+    "postcss-loader": "^0.9.0",
+    "react": "~15.1.0",
+    "react-dom": "~15.1.0",
+    "react-redux": "^4.0.0",
+    "react-router": "^2.2.0",
+    "react-router-redux": "^4.0.0",
+    "redux": "^3.0.0",
+    "redux-thunk": "^2.0.0"
+  },
+  "devDependencies": {
+    "redbox-react": "^1.3.0"
   }
 }
