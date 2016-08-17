@@ -37,22 +37,31 @@
 ![](https://img.alicdn.com/tps/TB1NwDXLpXXXXXDXVXXXXXXXXXX-3795-3541.jpg)
 ## 项目开发流程
 1. 安装依赖
+
 ```
 tnpm install 
 ```
+
 2. 安装`redux`工具
+
 ```
 tnpm i redux-cli -g
 ```
+
 3. 运行
+
 ```
 npm run dev
 ```
+
 4. 生成container
+
 注意containerName不用加Contaienr后缀,随后会在`routes`和`container`生成相关文件。
+
 ```
 redux g container containerName
 ```
+
 在一个`routes`文件夹里:
 - `index.js` 这里可以配置自路由信息
 - `container.js` 将React组件与Redux连接起来,往props注入内容在这里配置
@@ -61,9 +70,11 @@ redux g container containerName
 在一个`containers`文件夹里,已经为你生成了`container`相关文件夹,直接在这里使用`redux`传递下来的`props`即可
 
 5. 生成子container
+
 ```
 redux g subContainer containerName #这里填写的是父container名称,注意保持一致
 ```
+
 它会在你父container再增加一个`sub.js`,你可以将其更改为你需要的名称,然后**在父container里配置路由**,便可以访问了。
 
 ## 附录
