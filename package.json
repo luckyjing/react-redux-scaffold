@@ -8,16 +8,8 @@
     "npm": "^3.0.0"
   },
   "scripts": {
-    "clean": "rimraf dist",
-    "lint": "eslint src tests server",
-    "lint:fix": "npm run lint -- --fix",
     "dev": "def dbl project dev",
-    "test": "better-npm-run test",
-    "test:dev": "npm run test -- --watch",
-    "deploy": "better-npm-run deploy",
-    "deploy:dev": "better-npm-run deploy:dev",
-    "deploy:prod": "better-npm-run deploy:prod",
-    "codecov": "cat coverage/*/lcov.info | codecov"
+    "push":"def dbl project publish && git add . && git commit -m'update' && git push origin daily/0.0.1 "
   },
   "repository": {
     "type": "git",
