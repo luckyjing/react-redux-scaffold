@@ -9,6 +9,12 @@ export function demo(msg) {
   console.log(value);
   return value;
 }
+export function addMenu(menu) {
+  return {
+    type: TYPE.ADD_MENU,
+    data: menu
+  }
+}
 export const asyncDemo = () => {
   return (dispatch, getState) => {
     // 在这儿使用dispath可以实现在异步请求前做一次操作

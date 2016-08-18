@@ -1,6 +1,6 @@
 import React, {Component, PropTypes} from 'react';
 
-export default class HomeContainer extends Component {
+export default class JingXinContainer extends Component {
   constructor(props) {
     super(props);
   }
@@ -14,7 +14,7 @@ export default class HomeContainer extends Component {
     return (
       <div>
         <h1>
-        HomeContainer
+        JingXinContainer
         </h1>
         {this.props.children}
       </div>

@@ -1,17 +1,21 @@
 import {injectReducer} from '../../store/reducers'
 import Container from './container'
 import reducer from './redux/reducer'
-
+import sub from '../../containers/JingXinContainer/sub'
 export default (store) => {
   // NOTE: 将当前container的reducer注入到全局store中
-  injectReducer(store, {key: '<%= pascalEntityName %>', reducer});
+  injectReducer(store, {key: 'JingXin', reducer});
   // 路由配置规则
   // 路由配置规则
   const route = {
-    path: '<%= pascalEntityName %>',
-    name: '<%= pascalEntityName %>',
+    path: 'JingXin',
+    name: 'JingXin',
     component: Container,
-    childRoutes: []
+    childRoutes: [{
+      path:'sub',
+      name:'二级',
+      component:sub
+    }]
   };
   return route;
 }

@@ -10,8 +10,8 @@ export default class TopMenu extends Component {
     super(props);
   }
 
-  renderMenu(menu) {
-    return menu.map((ctx, index)=> {
+  renderMenu() {
+    return this.props.menu.map((ctx, index)=> {
       if (ctx.childRoutes && ctx.childRoutes.length) {
         // 包含子节点 -> 遍历子节点
         let item = ctx.childRoutes.map((subCtx, id)=> {
@@ -34,7 +34,7 @@ export default class TopMenu extends Component {
               defaultSelectedKeys={['0']}
               style={{lineHeight: '64px'}}
         >
-          {this.renderMenu(this.props.menu)}
+          {this.renderMenu()}
         </Menu>
       </div>
     )

@@ -8,3 +8,13 @@ export function namespace(prefix, TYPE) {
   }
   TYPE._init_ = true;
 }
+export function requireAll(r, filter = true) {
+  let keys = r.keys();
+  let result = [];
+  for (let i = 0, len = keys.length; i < len; i++) {
+    if (filter || filter.call(null, keys[i])) {
+      result.push(r(keys[i]));
+    }
+  }
+  return result;
+}

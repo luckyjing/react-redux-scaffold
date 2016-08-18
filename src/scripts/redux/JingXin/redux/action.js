@@ -1,6 +1,6 @@
 import * as TYPE from './constant';
 import {namespace} from '../../../global/services'
-namespace('Home', TYPE);
+namespace('JingXin', TYPE);
 export function demo(msg) {
   var value = {
     type: TYPE.DEMO,

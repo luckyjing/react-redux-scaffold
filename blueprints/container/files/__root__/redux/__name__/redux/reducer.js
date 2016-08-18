@@ -8,7 +8,10 @@ const initialState = {
 // Action Handlers
 // 需要编辑
 const ACTION_HANDLERS = {
-  [TYPE.DEMO]: (state, action) => state
+  [TYPE.DEMO]: (state, action) => state,
+  [TYPE.ADD_MENU]:(state,action)=>Object.assign({},state,{
+    menu:action.data
+  })
 };
 
 // Reducer

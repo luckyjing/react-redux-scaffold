@@ -4,12 +4,17 @@ import {Menu, Icon} from '@ali/dblx'
 import './LeftMenu.less'
 const SubMenu = Menu.SubMenu;
 const Item = Menu.Item;
+function travel(menu) {
+  // 先获取本层次信息
+
+}
 export default class LeftMenu extends Component {
   constructor(props) {
     super(props);
   }
-  renderMenu(menu) {
-    return menu.map((ctx, index)=> {
+
+  renderMenu() {
+    return this.props.menu.map((ctx, index)=> {
       if (ctx.childRoutes && ctx.childRoutes.length) {
         // 包含子节点 -> 遍历子节点
         let item = ctx.childRoutes.map((subCtx, id)=> {
@@ -24,12 +29,13 @@ export default class LeftMenu extends Component {
       }
     })
   }
+
   render() {
     return (
       <div>
         <Menu mode="inline" theme="dark"
               defaultSelectedKeys={['1']} defaultOpenKeys={['sub1']}>
-          {this.renderMenu(this.props.menu)}
+          {this.renderMenu()}
         </Menu>
       </div>
     )

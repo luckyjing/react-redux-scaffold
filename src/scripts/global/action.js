@@ -7,3 +7,9 @@ export function addMenu(data) {
     data
   }
 }
+export function nowMenu(data) {
+  return {
+    type:TYPE.NOW_MENU,
+    data
+  }
+}
