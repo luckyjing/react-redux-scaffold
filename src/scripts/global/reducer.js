@@ -1,4 +1,3 @@
-import * as ACTION from './action';
 import * as TYPE from './constant';
 import {namespace} from './services'
 namespace('global', TYPE);
@@ -9,7 +8,7 @@ const initState = {
 const ACTION_HANDLERS = {
   [TYPE.ADD_MENU]: (state, action)=> {
     return Object.assign({}, state, {
-      _system_menu: state._system_menu.concat(action.data)
+      _system_menu: action.data
     });
   },
   [TYPE.NOW_MENU]: (state, action)=> {

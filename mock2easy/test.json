@@ -25,5 +25,5 @@
      "docError": [],
      "interfaceUrl": "/test.json",
      "interfaceName": "/test.json",
-     "lazyLoad": "no"
+     "lazyLoad": "yes"
 }

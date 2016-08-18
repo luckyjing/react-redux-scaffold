@@ -7,8 +7,7 @@ import {requireAll} from '../global/services'
 export const createRoutes = (store) => {
   let containers = requireAll(require.context('../redux/', true, /index\.js$/));
   let childRoutes = containers.map(ctx=>ctx(store));
-  store.dispatch(addMenu(childRoutes));
-  return {
+  let route = {
     path: baseRoute,
     component: CoreLayout,
     // 路由规则不匹配时,目前逻辑为 重定向到根路径
@@ -16,9 +15,11 @@ export const createRoutes = (store) => {
       path: '*',
       onEnter: ({}, replace)=>replace(baseRoute)
     }]),
-    onChange:function(prevState, nextState, replace){
+    onChange: function (prevState, nextState, replace) {
       console.log(nextState.location.pathname)
     }
-  }
+  };
+  store.dispatch(addMenu(route));
+  return route;
 };
 export default createRoutes

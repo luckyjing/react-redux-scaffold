@@ -76,7 +76,7 @@ redux g container containerName
 redux g subContainer containerName #这里填写的是父container名称,注意保持一致
 ```
 
-它会在你父container再增加一个`sub.js`,你可以将其更改为你需要的名称,然后**在父container里配置路由**,便可以访问了。
+它会在你父container再增加一个`sub1.js`,你可以将其更改为你需要的名称,然后**在父container里配置路由**,便可以访问了。
 
 ### 6 一句话总结
 
@@ -86,3 +86,4 @@ redux g subContainer containerName #这里填写的是父container名称,注意�
 - Ant.Design 参考手册  [Ant.Design](http://ant.design/)
 - less Mixins 参考手册 [lesshat](https://github.com/madebysource/lesshat/blob/master/README.md)
 - Redux 生成器 参考手册 [redux-cli](https://github.com/SpencerCDixon/redux-cli)
+- Ajax 参考手册 [Ajax](https://github.com/fdaciuk/ajax)
