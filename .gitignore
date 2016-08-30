@@ -3,3 +3,5 @@
 # self
 
 node_modules
+docs
+!docs/_book
