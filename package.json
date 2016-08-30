@@ -10,8 +10,8 @@
   "scripts": {
     "dev": "def dbl project dev  -p 3005 -m 8005",
     "push": "def dbl project publish && git add . && git commit -m'update' && git push origin daily/0.0.1 ",
-    "doc":"cd docs && gitbook  serve",
-    "build":"cd docs && gitbook build"
+    "doc": "cd docs && gitbook  serve",
+    "build": "cd docs && gitbook build"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,6 @@
   "license": "MIT",
   "dependencies": {
     "@ali/dblx": "0.0.29",
-    "@fdaciuk/ajax": "^2.1.2",
     "babel-polyfill": "^6.9.0",
     "extract-text-webpack-plugin": "^1.0.0",
     "file-loader": "^0.9.0",
@@ -29,6 +28,7 @@
     "history": "^2.0.0",
     "html-webpack-plugin": "^2.7.1",
     "imports-loader": "^0.6.5",
+    "jquery-ajax": "^2.1.4",
     "json-loader": "^0.5.4",
     "normalize.css": "^4.1.1",
     "postcss-loader": "^0.9.0",

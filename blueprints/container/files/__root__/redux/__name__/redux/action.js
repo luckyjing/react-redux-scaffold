@@ -1,6 +1,6 @@
 import * as TYPE from './constant';
 import {namespace} from '../../../global/services'
-import ajax from '@fdaciuk/ajax'
+import $ from 'jquery-ajax'
 namespace('<%= pascalEntityName %>', TYPE);
 
 export function demo(msg) {
@@ -37,9 +37,12 @@ export function getInfo() {
   return (dispatch, getState) => {
     // 在这儿使用dispath可以实现在异步请求前做一次操作
     dispatch(loading());
-    return ajax().get('/test.json').then((res, xhr)=> {
-      // 异步请求完毕,res 为 JSON parse过后的JS Object
+    return $.ajax({
+      url:"/test.json",
+      data:{},
+      dataType:'json'
+    }).done(res=>{
       dispatch(receiveInfo(res));
-    })
+    });
   }
 }

@@ -86,4 +86,4 @@ redux g subContainer containerName #这里填写的是父container名称,注意�
 - Ant.Design 参考手册  [Ant.Design](http://ant.design/)
 - less Mixins 参考手册 [lesshat](https://github.com/madebysource/lesshat/blob/master/README.md)
 - Redux 生成器 参考手册 [redux-cli](https://github.com/SpencerCDixon/redux-cli)
-- Ajax 参考手册 [Ajax](https://github.com/fdaciuk/ajax)
+- Ajax 参考jQuery Ajax 不用怀疑,就是它!
