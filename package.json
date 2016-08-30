@@ -9,7 +9,9 @@
   },
   "scripts": {
     "dev": "def dbl project dev  -p 3005 -m 8005",
-    "push": "def dbl project publish && git add . && git commit -m'update' && git push origin daily/0.0.1 "
+    "push": "def dbl project publish && git add . && git commit -m'update' && git push origin daily/0.0.1 ",
+    "doc":"cd docs && gitbook  serve",
+    "build":"cd docs && gitbook build"
   },
   "repository": {
     "type": "git",
