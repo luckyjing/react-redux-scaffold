@@ -1,60 +1,78 @@
 @import "base";
 @import "mixins";
+@import "dblx/themes/default/custom";
 
 .abc-header {
   margin: @margin-md 0;
 }
 
 // 删除线效果
-.delete {
+.text-delete {
   text-decoration: line-through;
 }
 
-// 段落格式
-p {
 
-}
 
 // 字体大小
 .text-lg {
-  font-size: 24px;
-}
-
-.text-md {
   font-size: 16px;
 }
 
-// 字体颜色
-
-.text-primary {
-  .text-emphasis-variant(@color-primary);
+.text-md {
+  font-size: 14px;
 }
 
-.text-success {
-  .text-emphasis-variant(@color-success);
-}
-
-.text-info {
-  .text-emphasis-variant(@color-info);
-}
-
-.text-warning {
-  .text-emphasis-variant(@color-warning);
-}
-
-.text-danger {
-  .text-emphasis-variant(@color-danger);
-}
-
-// 字体位置
+// Alignment
 .text-left {
   text-align: left;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .text-center {
   text-align: center;
 }
 
-.text-right {
-  text-align: right;
+.text-justify {
+  text-align: justify;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+// Transformation
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+// Contextual colors
+.text-muted {
+  color: @muted-color;
+}
+
+.text-primary {
+  .text-emphasis-variant(@primary-color);
+}
+
+.text-success {
+  .text-emphasis-variant(@success-color);
+}
+
+.text-warning {
+  .text-emphasis-variant(@warning-color);
+}
+
+.text-danger {
+  .text-emphasis-variant(@error-color);
 }
