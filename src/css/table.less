@@ -1,0 +1,43 @@
+@import "base";
+
+.abc-table-header {
+  margin: @margin 8px;
+}
+
+.ant-table {
+  th {
+    background: #f5f6fa;
+    border-bottom: 1px solid #e1e6eb;
+    padding: 8px;
+    color: #999;
+  }
+  td, th {
+    text-align: center;
+  }
+}
+
+.table-container {
+  border: 1px solid #e1e6eb;
+  // 表头
+  .table-header {
+    background: #f5f6fa;
+    line-height: 38px;
+    height: 40px;
+    border-bottom: 1px solid #e1e6eb;
+    margin-bottom: 0;
+    padding: 0 8px;
+    .table-header-p {
+      line-height: 40px;
+      font-size: 14px;
+      color: #333;
+    }
+  }
+  .ant-table-pagination{
+    padding-right:8px;
+  }
+  // 分页按钮
+  .ant-pagination-item,.ant-pagination-prev,.ant-pagination-next {
+    border-radius:0;
+  }
+  margin-bottom: @margin-lg;
+}

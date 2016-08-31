@@ -1,0 +1,60 @@
+@import "base";
+@import "mixins";
+
+.abc-header {
+  margin: @margin-md 0;
+}
+
+// 删除线效果
+.delete {
+  text-decoration: line-through;
+}
+
+// 段落格式
+p {
+
+}
+
+// 字体大小
+.text-lg {
+  font-size: 24px;
+}
+
+.text-md {
+  font-size: 16px;
+}
+
+// 字体颜色
+
+.text-primary {
+  .text-emphasis-variant(@color-primary);
+}
+
+.text-success {
+  .text-emphasis-variant(@color-success);
+}
+
+.text-info {
+  .text-emphasis-variant(@color-info);
+}
+
+.text-warning {
+  .text-emphasis-variant(@color-warning);
+}
+
+.text-danger {
+  .text-emphasis-variant(@color-danger);
+}
+
+// 字体位置
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
