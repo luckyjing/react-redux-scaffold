@@ -68,7 +68,7 @@ export default class DataTable extends Component {
         <Row type="flex" justify="start" className="table-header">
           <Col span="12">
             {
-              this.props.tableName ? <p className="table-header-p text-left">{this.props.tableName}</p> : ''
+              this.props.tableName ? <p className="text-left">{this.props.tableName}</p> : ''
             }
           </Col>
         </Row>
@@ -82,9 +82,11 @@ export default class DataTable extends Component {
             {topbarInfo}
           </Row>
         ) : ""}
-        {this.props.children}
+        <Row>
+          {this.props.children}
+        </Row>
         <div className="table-container">
-          {tableName}
+            {tableName}
           <Table columns={this.props.col} dataSource={this.props.data} pagination={pagination}
           />
         </div>
