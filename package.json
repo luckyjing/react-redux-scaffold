@@ -10,8 +10,9 @@
   "scripts": {
     "dev": "def dbl project dev  -p 3005 -m 8005",
     "push": "def dbl project publish && git add . && git commit -m'update' && git push origin daily/0.0.1 ",
+    "add":"git add build/ src/css src/scripts/components package.json src/scripts/index.js",
     "doc": "cd docs && gitbook  serve",
-    "build": "cd docs && gitbook build"
+    "build": "def dbl project publish"
   },
   "repository": {
     "type": "git",
@@ -41,6 +42,7 @@
     "redux-thunk": "^2.0.0"
   },
   "devDependencies": {
+    "babel-plugin-dblx": "0.0.1",
     "redbox-react": "^1.3.0"
   }
 }
