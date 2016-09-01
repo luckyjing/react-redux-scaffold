@@ -1,7 +1,7 @@
 {
-  "name": "react-redux-starter-kit",
-  "version": "3.0.0-alpha.2",
-  "description": "Get started with React, Redux, and React-Router!",
+  "name": "abc-starter-kit",
+  "version": "0.0.1",
+  "description": "",
   "main": "index.js",
   "engines": {
     "node": ">=4.2.0",
@@ -10,7 +10,6 @@
   "scripts": {
     "dev": "def dbl project dev  -p 3005 -m 8005",
     "push": "def dbl project publish && git add . && git commit -m'update' && git push origin daily/0.0.2 ",
-    "add":"git add build/ src/css src/scripts/components package.json src/scripts/index.js",
     "doc": "cd docs && gitbook  serve",
     "build": "def dbl project publish"
   },

@@ -1,5 +1,5 @@
 import React, {Component, PropTypes} from 'react';
-
+import Title from '../../components/Title';
 export default class <%= pascalEntityName %>Container extends Component {
   constructor(props) {
     super(props);
@@ -14,9 +14,7 @@ export default class <%= pascalEntityName %>Container extends Component {
   render() {
     return (
       <div>
-        <h1>
-        <%= pascalEntityName %>Container
-        </h1>
+        <Title title="<%= pascalEntityName %>Container"/>
         {this.props.children}
       </div>
     );

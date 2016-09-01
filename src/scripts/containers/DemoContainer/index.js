@@ -1,32 +1,8 @@
 import React, {Component, PropTypes} from 'react';
-import DataTable from '../../components/DataTable';
-const columns = [{
-  title: '姓名',
-  dataIndex: 'name',
-  render: text => <a href="#">{text}</a>,
-}, {
-  title: '年龄',
-  dataIndex: 'age',
-}, {
-  title: '住址',
-  dataIndex: 'address',
-}];
-const data = [{
-  key: '1',
-  name: '胡彦斌',
-  age: 32,
-  address: '西湖区湖底公园1号',
-}, {
-  key: '2',
-  name: '胡彦祖',
-  age: 42,
-  address: '西湖区湖底公园1号',
-}, {
-  key: '3',
-  name: '李大嘴',
-  age: 32,
-  address: '西湖区湖底公园1号',
-}];
+import Title from '../../components/Title';
+import {Tag, Steps,Alert,Input} from '@ali/dblx'
+const Step = Steps.Step;
+
 export default class DemoContainer extends Component {
   constructor(props) {
     super(props);
@@ -38,35 +14,16 @@ export default class DemoContainer extends Component {
     actions.getInfo();
   }
 
-  pageChange(currentPage, pageSize) {
-    console.log(currentPage, pageSize);
-  }
 
-  onTabClick(key) {
-    console.log(key);
-  }
 
   render() {
-    const tabs = [{
-      key: 'ecs',
-      name: 'ECS'
-    }, {
-      key: 'rds',
-      name: 'RDS数据库'
-    }];
+
     return (
       <div>
-        <DataTable
-          col={columns}
-          data={data}
-          tableName="表名"
-          pageCfg={{pageSize: 1, currentPage: 2}}
-          onPageChange={this.pageChange}
-          tabs={tabs}
-          onTabClick={this.onTabClick}
-        >
-          <h1>表单区域</h1>
-        </DataTable>
+        <div>
+          <Title title="页面标题" />
+        </div>
+
       </div>
     );
   }

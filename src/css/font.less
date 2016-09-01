@@ -11,8 +11,6 @@
   text-decoration: line-through;
 }
 
-
-
 // 字体大小
 .text-lg {
   font-size: 16px;
@@ -75,4 +73,22 @@
 
 .text-danger {
   .text-emphasis-variant(@error-color);
+}
+
+// 页面标题
+.text-title-row {
+  padding: @margin 0;
+  border-bottom: 1px solid @border-color-base;
+}
+
+.text-title {
+  font-size: @font-size-lg;
+  text-indent: @margin;
+  border-left: 2px solid @primary-color;
+  margin: @margin 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: @text-color;
+  margin: @margin 0;
 }
