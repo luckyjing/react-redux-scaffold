@@ -1,0 +1,109 @@
+{
+     "interfaceType": "GET",
+     "requiredParameters": [],
+     "responseParameters": [
+          {
+               "id": "01",
+               "kind": "string",
+               "name": "success",
+               "rule": "msg",
+               "array": [],
+               "nameVerify": "name_1473055688000",
+               "ruleVerify": "rule_1473055688000"
+          },
+          {
+               "id": "02",
+               "kind": "string",
+               "name": "code",
+               "rule": "200",
+               "array": [],
+               "nameVerify": "name_1473055702000",
+               "ruleVerify": "rule_1473055702000"
+          },
+          {
+               "id": "03",
+               "kind": "array(object)",
+               "name": "data|100",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1473055735000",
+               "ruleVerify": "rule_1473055735000"
+          },
+          {
+               "id": "04",
+               "kind": "object",
+               "name": "page",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1473055754000",
+               "ruleVerify": "rule_1473055754000"
+          },
+          {
+               "id": "0401",
+               "kind": "mock",
+               "name": "totalRow",
+               "rule": "100",
+               "array": [],
+               "nameVerify": "name_1473055766000",
+               "ruleVerify": "rule_1473055766000"
+          },
+          {
+               "id": "0402",
+               "kind": "mock",
+               "name": "pageSize",
+               "rule": "10",
+               "array": [],
+               "nameVerify": "name_1473055795000",
+               "ruleVerify": "rule_1473055795000"
+          },
+          {
+               "id": "0403",
+               "kind": "mock",
+               "name": "currentPage",
+               "rule": "1",
+               "array": [],
+               "nameVerify": "name_1473055810000",
+               "ruleVerify": "rule_1473055810000"
+          },
+          {
+               "id": "0301",
+               "kind": "string",
+               "name": "name",
+               "rule": "@word",
+               "array": [
+                    "03"
+               ],
+               "nameVerify": "name_1473055828000",
+               "ruleVerify": "rule_1473055828000"
+          },
+          {
+               "id": "0302",
+               "kind": "mock",
+               "name": "age|20-30",
+               "rule": "1-1000",
+               "array": [
+                    "03"
+               ],
+               "nameVerify": "name_1473055842000",
+               "ruleVerify": "rule_1473055842000"
+          },
+          {
+               "id": "0303",
+               "kind": "string",
+               "name": "address",
+               "rule": "@word",
+               "array": [
+                    "03"
+               ],
+               "nameVerify": "name_1473055869000",
+               "ruleVerify": "rule_1473055869000"
+          }
+     ],
+     "reqError": [],
+     "docError": [
+          "Missing definition in the ducoment for［{{parameters}}］as request parameters"
+     ],
+     "interfaceUrl": "/test/table.json",
+     "interfaceName": "/test/table.json",
+     "lazyLoad": "no"
+}

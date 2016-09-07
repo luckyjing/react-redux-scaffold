@@ -3,19 +3,25 @@ import {namespace} from '../../../global/services'
 import $ from 'jquery-ajax'
 namespace('Table', TYPE);
 
-export function demo(msg) {
-  return {
-    type: TYPE.DEMO,
-    data: msg
+export function renderTable(params) {
+  return (dispatch, getState) => {
+    let state = getState().Table;
+    return $.ajax({
+      url: "/test/table.json",
+      type: 'get',
+      data: Object.assign({
+        type: state.tab
+      }, params,),
+      dataType: 'json'
+    }).done(res=> {
+      dispatch(receiveInfo(res));
+    });
   }
 }
-/**
- * 在发起异步Ajax请求前,可以触发一次loading action,此时可以根据loading的状态在页面里展示加载提示
- * @returns {{type}}
- */
-export function loading() {
+export function setTab(data) {
   return {
-    type: TYPE.LOADING
+    type: TYPE.SET_TAB,
+    data
   }
 }
 /**
@@ -25,24 +31,8 @@ export function loading() {
  */
 export function receiveInfo(res) {
   return {
-    type: TYPE.GET_INFO,
+    type: TYPE.RENDER_TABLE,
     data: res
   }
 }
-/**
- * 异步请求的action,在发送请求前打开loading,在发送请求后由后续的action去关闭loading
- * @returns {Promise}
- */
-export function getInfo() {
-  return (dispatch, getState) => {
-    // 在这儿使用dispath可以实现在异步请求前做一次操作
-    dispatch(loading());
-    return $.ajax({
-      url:"/test.json",
-      data:{},
-      dataType:'json'
-    }).done(res=>{
-      dispatch(receiveInfo(res));
-    });
-  }
-}
+

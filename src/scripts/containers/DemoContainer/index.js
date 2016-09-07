@@ -1,7 +1,7 @@
 import React, {Component, PropTypes} from 'react';
 import Title from '../../components/Title';
-import {Tag, Steps,Alert,Input} from '@ali/dblx'
-const Step = Steps.Step;
+import Section from '../../components/Section';
+import {Tag, Button, Alert, Input} from '@ali/dblx'
 
 export default class DemoContainer extends Component {
   constructor(props) {
@@ -15,13 +15,21 @@ export default class DemoContainer extends Component {
   }
 
 
-
   render() {
 
     return (
       <div>
         <div>
-          <Title title="页面标题" />
+          <Title title="页面标题">
+          </Title>
+          <Section title="第一章节"/>
+          <p>
+            段落1
+          </p>
+          <Section title="第二章节"/>
+          <p>
+            段落2
+          </p>
         </div>
 
       </div>

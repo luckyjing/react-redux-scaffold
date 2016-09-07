@@ -1,6 +1,6 @@
 import React, {Component, PropTypes} from 'react';
-import {Row, Col} from '@ali/dblx';
-export default class TitleComponent extends Component {
+import {Row,Col} from '@ali/dblx';
+export default class SectionComponent extends Component {
   constructor(props) {
     super(props);
   }
@@ -11,14 +11,11 @@ export default class TitleComponent extends Component {
 
   render() {
     return (
-      <Row className="text-title-row">
+      <Row className="text-section-row">
         <Col span="12">
-          <p className="text-title">
+          <p className="text-section">
             {this.props.title}
           </p>
-        </Col>
-        <Col span="12" >
-          {this.props.children}
         </Col>
       </Row>
     );

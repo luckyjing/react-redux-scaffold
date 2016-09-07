@@ -77,15 +77,22 @@
 
 // 页面标题
 .text-title-row {
-  padding: @margin 0;
+  padding: @margin-md 0;
   border-bottom: 1px solid @border-color-base;
+  .text-title {
+    font-size: @font-size-lg;
+    text-indent: @margin;
+    border-left: 2px solid @primary-color;
+    line-height: 32px;
+  }
 }
 
-.text-title {
-  font-size: @font-size-lg;
-  text-indent: @margin;
-  border-left: 2px solid @primary-color;
-  margin: @margin 0;
+// 页面内容标题
+.text-section-row {
+  margin: @margin-md 0;
+}
+.text-section {
+  font-size: @font-size-md;
 }
 
 h1, h2, h3, h4, h5, h6 {

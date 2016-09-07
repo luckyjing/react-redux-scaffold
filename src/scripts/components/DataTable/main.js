@@ -3,12 +3,16 @@ import {Table, Button, Row, Col} from '@ali/dblx';
 export default class DataTable extends Component {
   constructor(props) {
     super(props);
+    let tabIndex = 0;
+    if (this.props.tabs) {
+      this.props.tabs.forEach((tab, index)=>tab.default ? tabIndex = index : 0);
+    }
     this.state = {
-      tabIndex: 0
+      tabIndex: tabIndex
     };
     this.default = {
       pagination: {
-        total: this.props.data.length,
+        total: 0,
         pageSize: 1,
         current: 1,
         showTotal: total=>`共 ${total} 条`,
@@ -34,6 +38,11 @@ export default class DataTable extends Component {
   }
 
   render() {
+    // 数据信息
+    let data = this.props.data;
+    if (!data) {
+      data = [];
+    }
     // 分页信息
     let pagination = this.default.pagination;
     const pageCfg = this.props.pageCfg;
@@ -82,10 +91,14 @@ export default class DataTable extends Component {
             {topbarInfo}
           </Row>
         ) : ""}
-            {this.props.children}
+        {this.props.children}
         <div className="table-container">
           {tableName}
-          <Table columns={this.props.col} dataSource={this.props.data} pagination={pagination}
+          <Table
+            columns={this.props.col}
+            dataSource={data}
+            pagination={pagination}
+            rowKey={(record, index)=>index}
           />
         </div>
       </div>
