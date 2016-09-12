@@ -6,7 +6,6 @@ export default (store) => {
   // NOTE: 将当前container的reducer注入到全局store中
   injectReducer(store, {key: 'Form', reducer});
   // 路由配置规则
-  // 路由配置规则
   const route = {
     path: 'Form',
     name: 'Form',

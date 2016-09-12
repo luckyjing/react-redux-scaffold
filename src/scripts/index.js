@@ -1,7 +1,7 @@
 // import 'babel-polyfill'
 import React from 'react'
 import ReactDOM from 'react-dom'
-import {useRouterHistory, browserHistory, hashHistory} from 'react-router'
+import {hashHistory} from 'react-router'
 import {syncHistoryWithStore} from 'react-router-redux'
 import createStore from './store/createStore'
 import AppContainer from './containers/AppContainer'

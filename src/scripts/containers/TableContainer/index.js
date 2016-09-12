@@ -1,7 +1,6 @@
 import React, {Component, PropTypes} from 'react';
 import Title from '../../components/Title';
-import DataTable from '../../components/DataTable';
-import {Row, Col, Input, Button, Form, DatePicker} from '@ali/dblx'
+import {Row, Col, Input, Button, Form, DatePicker, DataTable} from '@ali/dblx'
 const FormItem = Form.Item;
 
 const columns = [{
