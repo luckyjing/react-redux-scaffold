@@ -1,0 +1,78 @@
+{
+     "interfaceType": "GET",
+     "requiredParameters": [
+          {
+               "name": "id",
+               "required": true,
+               "remark": "",
+               "nameVerify": "name_1473671789000",
+               "ruleVerify": "rule_1473671789000"
+          },
+          {
+               "name": "name",
+               "required": true,
+               "remark": "",
+               "nameVerify": "name_1473671803000",
+               "ruleVerify": "rule_1473671803000"
+          }
+     ],
+     "responseParameters": [
+          {
+               "id": "01",
+               "kind": "mock",
+               "name": "code",
+               "rule": "200",
+               "array": [],
+               "nameVerify": "name_1473671844000",
+               "ruleVerify": "rule_1473671844000",
+               "remark": "状态"
+          },
+          {
+               "id": "02",
+               "kind": "object",
+               "name": "data",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1473671885000",
+               "ruleVerify": "rule_1473671885000"
+          },
+          {
+               "id": "0201",
+               "kind": "array(object)",
+               "name": "list",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1473671901000",
+               "ruleVerify": "rule_1473671901000"
+          },
+          {
+               "id": "020101",
+               "kind": "string",
+               "name": "name",
+               "rule": "@word",
+               "array": [
+                    "0201"
+               ],
+               "nameVerify": "name_1473671916000",
+               "ruleVerify": "rule_1473671916000"
+          },
+          {
+               "id": "020102",
+               "kind": "string",
+               "name": "age",
+               "rule": "20",
+               "array": [
+                    "0201"
+               ],
+               "nameVerify": "name_1473671934000",
+               "ruleVerify": "rule_1473671934000"
+          }
+     ],
+     "reqError": [],
+     "docError": [],
+     "interfaceUrl": "/test/new.json",
+     "interfaceName": "/test/new.json",
+     "lazyLoad": "no",
+     "responseParametersType": false,
+     "responseJson": "{\n\"a\":\"asdf\"\n}"
+}

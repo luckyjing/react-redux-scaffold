@@ -2,7 +2,7 @@ import React from 'react'
 import * as actions from '../../global/action'
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
-import LeftMenu from '../../components/LeftMenu'
+import {LeftMenu} from '@ali/dblx'
 export const CoreLayout = ({children, _system_menu, nowRoute, router}) => (
   <div className='container'>
     <div className="dblx-layout-aside">
@@ -38,4 +38,3 @@ const mapStateToProps = (state) => ({
 
 // 导出链接好的React Class
 export default connect(mapStateToProps, mapDispatchToProps)(CoreLayout)
-

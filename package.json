@@ -9,7 +9,7 @@
   },
   "scripts": {
     "dev": "def dbl project dev  -p 3005 -m 8005",
-    "push": "def dbl project publish && git add . && git commit -m'update' && git push origin daily/0.0.2 ",
+    "push": " git add . && git commit -m'update' && git push origin daily/0.0.2 ",
     "doc": "cd docs && gitbook  serve",
     "build": "def dbl project publish"
   },
@@ -20,7 +20,7 @@
   "author": "jingxin.sjx",
   "license": "MIT",
   "dependencies": {
-    "@ali/dblx": "^0.1.1",
+    "@ali/dblx": "^0.1.7",
     "babel-polyfill": "^6.9.0",
     "extract-text-webpack-plugin": "^1.0.0",
     "file-loader": "^0.9.0",
@@ -41,6 +41,8 @@
     "redux-thunk": "^2.0.0"
   },
   "devDependencies": {
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
     "babel-plugin-dblx": "0.0.1",
     "redbox-react": "^1.3.0"
   }
