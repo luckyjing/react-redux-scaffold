@@ -10,6 +10,7 @@
   "scripts": {
     "dev": "def dbl project dev  -p 3005 -m 8005",
     "push": " git add . && git commit -m'update' && git push origin daily/0.0.3",
+    "bp":"npm run build && npm run push",
     "doc": "cd docs && gitbook  serve",
     "build": "def dbl project publish"
   },

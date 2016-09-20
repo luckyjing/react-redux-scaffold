@@ -1,7 +1,5 @@
 import React, {Component, PropTypes} from 'react';
-import Title from '../../components/Title';
-import Section from '../../components/Section';
-import {Tag, Button, Alert, Input,notification} from '@ali/dblx'
+import {Title,Tag, Button, Alert, Input,notification,Section} from '@ali/dblx'
 
 export default class DemoContainer extends Component {
   constructor(props) {
