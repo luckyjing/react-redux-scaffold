@@ -1,4 +1,5 @@
-import CoreLayout from '../layouts/CoreLayout/CoreLayout'
+import CoreLayout from '../layouts/CoreLayout'
+import PureLayout from '../layouts/PureLayout'
 import {addMenu} from '../global/action'
 import {baseRoute} from '../config'
 import {requireAll} from '../global/services'
