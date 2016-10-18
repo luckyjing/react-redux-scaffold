@@ -8,7 +8,7 @@ export const CoreLayout = ({children, _system_menu, nowRoute, router}) => (
     <div className="dblx-layout-aside">
       <aside className="dblx-layout-sider">
         <div className="dblx-layout-logo">
-          <p>控制台</p>
+          <p>控制台系统</p>
         </div>
         <LeftMenu menu={_system_menu} path={nowRoute} location={router.locationBeforeTransitions.pathname}/>
       </aside>
