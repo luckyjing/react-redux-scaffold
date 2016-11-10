@@ -1,5 +1,5 @@
 import React, {Component, PropTypes} from 'react';
-import Title from '../../components/Title';
+import {Title} from '@ali/dblx';
 export default class <%= pascalEntityName %>Container extends Component {
   constructor(props) {
     super(props);
