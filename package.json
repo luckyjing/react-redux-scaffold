@@ -1,5 +1,5 @@
 {
-  "name": "abc-starter-kit",
+  "name": "react-redux-starter-kit",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -8,22 +8,21 @@
     "npm": "^3.0.0"
   },
   "scripts": {
-    "dev": "def dbl project dev  -p 3005 -m 8005",
+    "dev": "NODE_ENV=dev webpack-dev-server",
     "push": " git add . && git commit -m'update' && git push origin daily/0.0.3",
-    "bp":"npm run build && npm run push",
+    "bp": "npm run build && npm run push",
     "doc": "cd docs && gitbook  serve",
-    "build": "def dbl project publish"
+    "build": "NODE_ENV=production webpack"
   },
   "repository": {
     "type": "git",
-    "url": "http://gitlab.alibaba-inc.com/aliyun/abc-starter-kit"
+    "url": ""
   },
-  "author": "jingxin.sjx",
+  "author": "LuckyJing",
   "license": "MIT",
   "dependencies": {
-    "@ali/dblx": "^0.1.7",
+    "antd": "^2.4.3",
     "babel-polyfill": "^6.9.0",
-    "extract-text-webpack-plugin": "^1.0.0",
     "file-loader": "^0.9.0",
     "fs-extra": "^0.30.0",
     "history": "^2.0.0",
@@ -42,9 +41,23 @@
     "redux-thunk": "^2.0.0"
   },
   "devDependencies": {
-    "babel-core": "^6.14.0",
-    "babel-loader": "^6.2.5",
-    "babel-plugin-dblx": "0.0.1",
-    "redbox-react": "^1.3.0"
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.8",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-import": "^1.1.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-typecheck": "^3.9.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "css-loader": "^0.26.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "html-webpack-plugin": "^2.24.1",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "redbox-react": "^1.3.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
   }
 }

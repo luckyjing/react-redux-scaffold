@@ -1,5 +1,5 @@
 import React, {Component, PropTypes} from 'react';
-import {Title,Tag, Button, Alert, Input,notification,Section} from '@ali/dblx'
+import {Tag, Button, Alert, Input, notification} from 'antd'
 
 export default class DemoContainer extends Component {
   constructor(props) {
@@ -17,19 +17,6 @@ export default class DemoContainer extends Component {
 
     return (
       <div>
-        <div>
-          <Title title="页面标题">
-          </Title>
-          <Section title="第一章节"/>
-          <p>
-            段落1
-          </p>
-          <Section title="第二章节"/>
-          <p>
-            段落2
-          </p>
-        </div>
-
       </div>
     );
   }

@@ -2,16 +2,15 @@ import React from 'react'
 import * as actions from '../../global/action'
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
-import {LeftMenu} from '@ali/dblx'
 export const CoreLayout = ({children, _system_menu, nowRoute, router}) => (
   <div className='container'>
-      <div className="dblx-layout-main">
-        <div className="dblx-layout-container">
-          <div className="dblx-layout-content">
-            {children}
-          </div>
+    <div className="layout-main">
+      <div className="layout-container">
+        <div className="layout-content">
+          {children}
         </div>
       </div>
+    </div>
   </div>
 );
 
