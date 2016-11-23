@@ -3,16 +3,10 @@
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
-  "engines": {
-    "node": ">=4.2.0",
-    "npm": "^3.0.0"
-  },
   "scripts": {
     "dev": "NODE_ENV=dev webpack-dev-server",
-    "push": " git add . && git commit -m'update' && git push origin daily/0.0.3",
-    "bp": "npm run build && npm run push",
-    "doc": "cd docs && gitbook  serve",
-    "build": "NODE_ENV=production webpack"
+    "pub": "NODE_ENV=production webpack && git add . && git commit -m':grin:发布新功能' && git push origin master",
+    "win:publish": "NODE_ENV=production webpack"
   },
   "repository": {
     "type": "git",
@@ -26,7 +20,6 @@
     "file-loader": "^0.9.0",
     "fs-extra": "^0.30.0",
     "history": "^2.0.0",
-    "html-webpack-plugin": "^2.7.1",
     "imports-loader": "^0.6.5",
     "jquery-ajax": "^2.1.4",
     "json-loader": "^0.5.4",

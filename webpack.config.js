@@ -51,7 +51,7 @@ var config = {
   ],
   output: {
     path: debug ? devBuildDir : buildDir,
-    filename: debug ? 'index.js' : 'scripts/index.min.js',
+    filename: debug ? 'index.js' : 'scripts/index.js',
     publicPath: '/'  // 各种资源生成的链接[如 打包的图片]
   },
   externals: debug ? {} : externals,
@@ -119,11 +119,11 @@ if (debug) {
   config.module.loaders.push(lessLoader);
   // 分离出的css代码 在这里被注入到 css/[name].css文件里
   // @see https://github.com/webpack/extract-text-webpack-plugin
-  config.plugins.push(new ExtractTextPlugin('css/[name].css'));
+  config.plugins.push(new ExtractTextPlugin("css/index.css", {allChunks: false}));
   // 压缩
-  // config.plugins.push(new UglifyJsPlugin({
-  //   minimize: true
-  // }));
+  config.plugins.push(new UglifyJsPlugin({
+    minimize: true
+  }));
 }
 
 module.exports = config;

@@ -1,5 +1,4 @@
 # default rules
 .idea
 # self
-build
 node_modules
