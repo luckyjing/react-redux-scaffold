@@ -2,6 +2,11 @@ var path = require('path');
 var fs = require('fs');
 var webpack = require('webpack');
 
+// 删除build目录
+var del = require('del');
+
+del(['./build/*']);
+
 // webpack插件列表
 var HtmlwebpackPlugin = require('html-webpack-plugin'); // 生成一个html 加载 打包好后的脚本
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
