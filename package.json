@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "NODE_ENV=dev webpack-dev-server",
+    "dev": "webpack-dev-server",
     "pub": "NODE_ENV=production webpack && git add . && git commit -m':grin:发布新功能' && git push origin master",
-    "win:publish": "NODE_ENV=production webpack"
+    "win:pub": "set NODE_ENV=production webpack && git add . && git commit -m':grin:发布新功能' && git push origin master"
   },
   "repository": {
     "type": "git",

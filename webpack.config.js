@@ -80,12 +80,7 @@ var config = {
     port: devServerPort
   },
   plugins: [
-    // 生成HTML
-    new HtmlwebpackPlugin({
-      template: path.resolve(entryPath, 'src/index.html'),
-      filename: 'index.html',
-      inject: 'body'
-    })
+
   ],
 };
 
@@ -103,6 +98,12 @@ if (debug) {
   config.module.loaders.push(cssLoader);
   config.module.loaders.push(lessLoader);
   config.plugins = config.plugins.concat([
+    // 生成HTML
+    new HtmlwebpackPlugin({
+      template: path.resolve(entryPath, 'src/index.html'),
+      filename: 'index.html',
+      inject: 'body'
+    }),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
