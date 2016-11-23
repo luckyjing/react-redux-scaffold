@@ -26,8 +26,7 @@ var devBuildDir = path.resolve(entryPath, '__build'); // 开发环境下 静态�
 var externals = {
   "react": 'React',
   "react-dom": "ReactDOM",
-  'redux': 'Redux',
-  'react-redux': 'ReactRedux'
+  'redux': 'Redux'
 };
 // babel 参数
 var babelQuery = {
