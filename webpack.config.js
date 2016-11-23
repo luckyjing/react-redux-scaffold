@@ -54,7 +54,7 @@ var config = {
   output: {
     path: debug ? devBuildDir : buildDir,
     filename: debug ? 'index.js' : 'scripts/index.js',
-    publicPath: '/'  // 各种资源生成的链接[如 打包的图片]
+    publicPath: debug ? '/' : './' // 各种资源生成的链接[如 打包的图片]
   },
   externals: debug ? {} : externals,
   module: {
