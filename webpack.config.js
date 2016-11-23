@@ -24,12 +24,8 @@ var devServerPort = 3005; // webpack-dev-server 启动端口
 var devBuildDir = path.resolve(entryPath, '__build'); // 开发环境下 静态资源目录
 // 第三方资源
 var externals = {
-  'jQuery': 'window.jQuery',
-  '$': 'window.Zepto',
   "react": 'React',
-  "react-dom": "ReactDOM",
-  'redux': 'Redux',
-  'react-redux': 'ReactRedux'
+  "react-dom": "ReactDOM"
 };
 // babel 参数
 var babelQuery = {
