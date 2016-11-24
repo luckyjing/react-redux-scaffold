@@ -1,6 +1,7 @@
 import React, {Component, PropTypes} from 'react'
-import {Router} from 'react-router'
+import {Router, applyRouterMiddleware} from 'react-router'
 import {Provider} from 'react-redux'
+
 /**
  *  顶层容器,包含Route的配置,将众多组件连接起来,无需配置
  */
