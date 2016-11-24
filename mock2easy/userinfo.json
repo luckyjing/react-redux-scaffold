@@ -1,0 +1,38 @@
+{
+     "interfaceType": "GET",
+     "requiredParameters": [],
+     "responseParameters": [
+          {
+               "id": "01",
+               "kind": "mock",
+               "name": "code",
+               "rule": "200",
+               "array": [],
+               "nameVerify": "name_1479955757000",
+               "ruleVerify": "rule_1479955757000"
+          },
+          {
+               "id": "02",
+               "kind": "object",
+               "name": "data",
+               "rule": "--",
+               "array": [],
+               "nameVerify": "name_1479955783000",
+               "ruleVerify": "rule_1479955783000"
+          },
+          {
+               "id": "0201",
+               "kind": "string",
+               "name": "name",
+               "rule": "秦川",
+               "array": [],
+               "nameVerify": "name_1479955792000",
+               "ruleVerify": "rule_1479955792000"
+          }
+     ],
+     "reqError": [],
+     "docError": [],
+     "interfaceUrl": "/userinfo.json",
+     "interfaceName": "/userinfo.json",
+     "lazyLoad": "no"
+}

@@ -9,17 +9,14 @@ const initialState = {
 // 需要编辑
 const ACTION_HANDLERS = {
   [TYPE.DEMO]: (state, action) => {
-    console.log(action);
     return state;
   },
   [TYPE.LOADING]: (state, action)=> {
-    console.log(action);
     return Object.assign({}, state, {
       loading: true
     });
   },
   [TYPE.GET_INFO]: (state, action)=> {
-    console.log(action);
     return Object.assign({}, state, {
       loading: false
     })

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server",
+    "dev": "node dev.js",
     "pub": "NODE_ENV=production webpack && git add . && git commit -m':grin:发布新功能' && git push origin master",
     "win:pub": "set NODE_ENV=production webpack && git add . && git commit -m':grin:发布新功能' && git push origin master"
   },
@@ -34,6 +34,7 @@
     "redux-thunk": "^2.0.0"
   },
   "devDependencies": {
+    "async": "^2.1.4",
     "babel-core": "^6.18.2",
     "babel-loader": "^6.2.8",
     "babel-plugin-add-module-exports": "^0.2.1",
@@ -43,15 +44,19 @@
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-react": "^6.16.0",
     "babel-preset-stage-0": "^6.16.0",
+    "connect": "^3.5.0",
     "css-loader": "^0.26.0",
     "del": "^2.2.2",
     "extract-text-webpack-plugin": "^1.0.1",
     "html-webpack-plugin": "^2.24.1",
     "less": "^2.7.1",
     "less-loader": "^2.2.3",
+    "mock2easynew": "^0.0.3",
     "redbox-react": "^1.3.0",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.3",
-    "webpack-dev-server": "^1.16.2"
+    "webpack-dev-middleware": "^1.8.4",
+    "webpack-dev-server": "^1.16.2",
+    "webpack-hot-middleware": "^2.13.2"
   }
 }
