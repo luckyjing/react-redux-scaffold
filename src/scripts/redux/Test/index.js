@@ -1,7 +1,7 @@
 import {injectReducer} from '../../store/reducers'
 import Container from './container'
 import reducer from './redux/reducer'
-import sub from '../../containers/TestContainer/Sub/sub1'
+
 export default (store) => {
   // NOTE: 将当前container的reducer注入到全局store中
   injectReducer(store, {key: 'Test', reducer});
@@ -10,11 +10,7 @@ export default (store) => {
     path: 'Test',
     name: 'Test',
     component: Container,
-    childRoutes: [{
-      path: ':id',
-      name: '子路由1',
-      component: sub,
-    }]
+    childRoutes: []
   };
   return route;
 }

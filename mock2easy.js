@@ -5,20 +5,16 @@ module.exports = function (program) {
     if (req.url.indexOf(program.interfaceSuffix) == -1) {
       return next();
     }
-
     var options = {
       hostname: '127.0.0.1',
       port: program.port,
       path: req.url,
-      method: req.method
-    };
-
-    if (req.method == 'POST') {
-      options.headers = {
+      method: req.method,
+      headers: {
         'Content-Type': 'application/json;charset=utf-8',
         'Cache-Control': 'no-cache'
-      };
-    }
+      }
+    };
     var _req = http.request(options, function (_res) {
       var data = '';
       _res.on('data', function (chunk) {

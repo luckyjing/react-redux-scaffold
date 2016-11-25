@@ -1,3 +1,4 @@
+var devServerPort = 3005; // webpack-dev-server 启动端口
 var path = require('path');
 var fs = require('fs');
 var webpack = require('webpack');
@@ -20,7 +21,6 @@ var buildDir = path.resolve(entryPath, 'build');// 打包目标地址
 var debug = process.env.NODE_ENV !== 'production';
 
 // 开发配置
-var devServerPort = 3005; // webpack-dev-server 启动端口
 var devBuildDir = path.resolve(entryPath, '__build'); // 开发环境下 静态资源目录
 // 第三方资源
 var externals = {
@@ -72,7 +72,6 @@ var config = {
     extensions: ['', '.js', '.jsx', '.json']
   },
   devServer: {
-    filename: 'bundle.js',
     hot: true,
     inline: true,
     progress: true,

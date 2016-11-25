@@ -1,0 +1,12 @@
+{
+     "interfaceType": "GET",
+     "requiredParameters": [],
+     "responseParameters": [],
+     "reqError": [],
+     "docError": [],
+     "interfaceUrl": "/ajax/profile.json",
+     "interfaceName": "/ajax/profile.json",
+     "lazyLoad": "no",
+     "responseParametersType": true,
+     "responseJson": "{\n    \"code\":200,\n\"data\":{\n\"name\":\"赵开朗\"\n}\n}"
+}
