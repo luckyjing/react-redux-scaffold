@@ -20,7 +20,7 @@
 ### 一、克隆仓库
 
 ```bash
-git clone git@gitlab.alibaba-inc.com:aliyun/abc-starter-kit.git <your_project_name>
+git clone https://github.com/luckyjing/react-redux-scaffold.git <your_project_name>
 cd <your_project_name>
 ```
 
