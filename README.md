@@ -61,7 +61,6 @@ redux g container Test
 ├── blueprints           # 这里便是我们执行redux命令时复制文件的源头
 │   ├── container
 │   └── subContainer
-├── bower.json
 ├── build
 ├── doc
 ├── mock2easy
@@ -148,6 +147,14 @@ export default class TestContainer extends Component {
 > 可能你会发问？redux中的数据怎么传递到页面里，放心，我已经做好了绑定了，在`redux`目录下里有对应的`Test`，进去阅读代码，我已经将此`state`绑定到页面上了，每个页面的`this.props.state`就能拿到`redux`对应的`state`，`action`同理。
 
 - 在`redux/Test/redux`下新建一套`constant`,`reducer`,`action`，然后试着在`TestContainer`里面通过`this.props.action`直接获取吧。
+
+### 七、 打包文件
+
+执行构建命令，`build`文件夹会存放构建好的`css`和`js`文件。
+
+```bash
+npm run build
+```
 
 恭喜你，你现在可以愉快的开发了~
 
