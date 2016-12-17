@@ -77,7 +77,7 @@ redux g container Test
 │       ├── routes        #  路由入口文件,已经配置好
 │       ├── store         #  store配置文件,无需配置
 │       └── index.html    #  主入口HTML
-└── webpack.config.js # dbl生成
+└── webpack.config.js     
 ```
 
 ### 六、开始写页面
