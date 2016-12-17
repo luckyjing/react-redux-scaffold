@@ -10,7 +10,7 @@ export const createRoutes = (store) => {
   let route = {
     path: baseRoute,
     component: CoreLayout,
-    // 路由规则不匹配时,目前逻辑为 重定向到根路径
+    // 路由规则不匹配时,目前逻辑为 重定向到根路径，也可以自定到其他目录
     childRoutes: childRoutes.concat([{
       path: '*',
       onEnter: ({}, replace)=>replace(baseRoute)
