@@ -11,7 +11,8 @@ const mapDispatchToProps = (dispatch) => ({
 
 // 将state绑定到props上
 const mapStateToProps = (state) => ({
-  state: state.<%= pascalEntityName %>
+  state: state.<%= pascalEntityName %>,
+  NOW_LOCATION: state.global.NOW_LOCATION
 });
 
 // 导出链接好的React Class

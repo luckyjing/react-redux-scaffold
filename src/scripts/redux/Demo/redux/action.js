@@ -1,7 +1,7 @@
 import * as TYPE from './constant';
 import {namespace} from '../../../global/services'
 import $ from 'jquery-ajax'
-namespace('Test', TYPE);
+namespace('Demo', TYPE);
 
 export function demo(msg) {
   return {

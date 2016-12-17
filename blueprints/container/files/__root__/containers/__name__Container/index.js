@@ -14,6 +14,7 @@ export default class <%= pascalEntityName %>Container extends Component {
     return (
       <div>
         <h1> <%= pascalEntityName %>Container </h1>
+        <h2>当前路由为：{this.props.NOW_LOCATION}</h2>
         {this.props.children}
       </div>
     );

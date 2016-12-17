@@ -1,8 +1,7 @@
-var devServerPort = 3005; // webpack-dev-server 启动端口
 var path = require('path');
 var fs = require('fs');
 var webpack = require('webpack');
-
+var devServerPort = require('./package.json').port.webpack;
 // 删除build目录
 var del = require('del');
 

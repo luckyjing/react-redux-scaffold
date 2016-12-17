@@ -2,7 +2,7 @@ import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 import * as actions from './redux/action'
 // 载入
-import Test from '../../containers/TestContainer';
+import Demo from '../../containers/DemoContainer';
 
 // 将actions绑定到props上
 const mapDispatchToProps = (dispatch) => ({
@@ -11,8 +11,9 @@ const mapDispatchToProps = (dispatch) => ({
 
 // 将state绑定到props上
 const mapStateToProps = (state) => ({
-  state: state.Test
+  state: state.Demo,
+  NOW_LOCATION: state.global.NOW_LOCATION
 });
 
 // 导出链接好的React Class
-export default connect(mapStateToProps, mapDispatchToProps)(Test)
+export default connect(mapStateToProps, mapDispatchToProps)(Demo)

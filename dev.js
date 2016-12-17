@@ -5,7 +5,7 @@ var webpack = require('webpack');
 var config = require('./webpack.config');
 var mock2easyMiddleware = require('mock2easy-middleware');
 var port = config.devServer.port;
-var mockPort = 8005; // mock服务启动的端口
+var mockPort = require('./package.json').port.mock; // mock服务启动的端口
 
 config.entry.unshift("webpack/hot/dev-server", "webpack-hot-middleware/client?reload=true");
 

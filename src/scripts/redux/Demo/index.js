@@ -4,11 +4,11 @@ import reducer from './redux/reducer'
 
 export default (store) => {
   // NOTE: 将当前container的reducer注入到全局store中
-  injectReducer(store, {key: 'Test', reducer});
+  injectReducer(store, {key: 'Demo', reducer});
   // 路由配置规则
   const route = {
-    path: 'Test',
-    name: 'Test',
+    path: 'Demo',
+    name: 'Demo',
     component: Container,
     childRoutes: []
   };

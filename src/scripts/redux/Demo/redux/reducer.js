@@ -1,6 +1,6 @@
 import * as TYPE from './constant';
 import {namespace} from '../../../global/services'
-namespace('Test', TYPE);
+namespace('Demo', TYPE);
 const initialState = {
   loading: false
 };

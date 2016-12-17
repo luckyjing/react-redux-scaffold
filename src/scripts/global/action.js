@@ -13,3 +13,9 @@ export function nowMenu(data) {
     data
   }
 }
+export function nowLocation(data) {
+  return {
+    type:TYPE.NOW_LOCATION,
+    data
+  }
+}

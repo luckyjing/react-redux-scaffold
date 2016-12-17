@@ -1,5 +1,5 @@
 import React, {Component, PropTypes} from 'react';
-export default class TestContainer extends Component {
+export default class DemoContainer extends Component {
   constructor(props) {
     super(props);
   }
@@ -13,7 +13,8 @@ export default class TestContainer extends Component {
   render() {
     return (
       <div>
-        <h1> TestContainer </h1>
+        <h1> DemoContainer </h1>
+        <h2>当前路由为：{this.props.NOW_LOCATION}</h2>
         {this.props.children}
       </div>
     );

@@ -2,12 +2,13 @@
   "name": "react-redux-starter-kit",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "dev": "node dev.js",
-    "dev2": "webpack-dev-server",
-    "pub": "NODE_ENV=production webpack && git add . && git commit -m':grin:发布新功能' && git push origin master",
-    "win:pub": "set NODE_ENV=production webpack && git add . && git commit -m':grin:发布新功能' && git push origin master"
+    "build": "NODE_ENV=production webpack"
+  },
+  "port":{
+    "webpack":3005,
+    "mock":8005
   },
   "repository": {
     "type": "git",

@@ -3,14 +3,14 @@ import * as actions from '../../global/action'
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 import LeftMenu from '../../components/left-menu'
-export const CoreLayout = ({children, _system_menu, nowRoute, router}) => (
+export const CoreLayout = ({children, _system_menu, NOW_LOCATION, router}) => (
   <div className='container'>
     <div className="layout-aside">
       <aside className="layout-sider">
         <div className="layout-logo">
           <p>控制台系统</p>
         </div>
-        <LeftMenu menu={_system_menu} path={nowRoute} location={router.locationBeforeTransitions.pathname}/>
+        <LeftMenu menu={_system_menu} path={NOW_LOCATION} location={router.locationBeforeTransitions.pathname}/>
       </aside>
       <div className="layout-main">
         <div className="layout-container">
@@ -36,7 +36,7 @@ const mapDispatchToProps = (dispatch) => ({
 const mapStateToProps = (state) => ({
   router: state.router,
   _system_menu: state.global._system_menu,
-  nowRoute: state.global._system_now_menu
+  NOW_LOCATION: state.global.NOW_LOCATION
 });
 
 // 导出链接好的React Class
