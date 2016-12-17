@@ -43,13 +43,15 @@ npm run dev
 
 创建新页面我利用了[redux-cli](https://github.com/SpencerCDixon/redux-cli)这个工具，你可以点进去查看它的设计理念，目前，我们只用到了它里面的一点点知识。
 
-需要有一点注意的是：**页面名称一定要大写字母开头，比如Test**，如果提示找不到`redux`，那么先执行一下`npm install redux-cli -g`
+需要有一点注意的是：**页面名称一定要大写字母开头，比如Test**。
+
+:anguished: 如果提示找不到`redux`，那么先执行一下`npm install redux-cli -g`
 
 ```bash
 redux g container Test
 ```
 
-**背后发生了什么？**
+**:flushed:背后发生了什么？**
 
 它其实就是将`blueprints`下的`container`渲染后复制到`src`文件里，你可以在`src`里看到新增的文件，位于`scripts/containers`和`scripts/redux`里。
 
@@ -144,7 +146,7 @@ export default class TestContainer extends Component {
   import {A,B} from '../module'
   ```
 
-> 可能你会发问？redux中的数据怎么传递到页面里，放心，我已经做好了绑定了，在`redux`目录下里有对应的`Test`，进去阅读代码，我已经将此`state`绑定到页面上了，每个页面的`this.props.state`就能拿到`redux`对应的`state`，`action`同理。
+> :question: 可能你会发问，redux中的数据怎么传递到页面里？放心，我已经做好了绑定了，在`redux`目录下里有对应的`Test`，进去阅读代码，我已经将此`state`绑定到页面上了，每个页面的`this.props.state`就能拿到`redux`对应的`state`，`action`同理。
 
 - 在`redux/Test/redux`下新建一套`constant`,`reducer`,`action`，然后试着在`TestContainer`里面通过`this.props.action`直接获取吧。
 
@@ -156,7 +158,7 @@ export default class TestContainer extends Component {
 npm run build
 ```
 
-恭喜你，你现在可以愉快的开发了~
+恭喜你，你现在可以愉快的开发了~ :thinking:
 
 # Q&A
 
